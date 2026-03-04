@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopKart - Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+/* Navbar */
+.navbar{
+    background:#2874f0;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.search-box{
+    width:40%;
+}
+
+.search-box input{
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:3px;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    background:white;
+    margin:20px 50px;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:10px;
+}
+
+.hero-text h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.hero-text button{
+    padding:12px 25px;
+    background:#fb641b;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.hero img{
+    width:350px;
+}
+
+/* Categories */
+.categories{
+    margin:20px 50px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.category{
+    background:white;
+    padding:20px;
+    text-align:center;
+    width:18%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.category:hover{
+    transform:scale(1.05);
+}
+
+.category img{
+    width:80px;
+    margin-bottom:10px;
+}
+
+/* Products */
+.products{
+    margin:30px 50px;
+}
+
+.products h2{
+    margin-bottom:20px;
+}
+
+.product-grid{
+    display:flex;
+    justify-content:space-between;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    width:23%;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.product:hover{
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product img{
+    width:120px;
+    margin-bottom:10px;
+}
+
+.product button{
+    margin-top:10px;
+    padding:8px 15px;
+    background:#2874f0;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Footer */
+.footer{
+    background:#172337;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">ShopKart</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <div class="nav-links">
+        <div>Login</div>
+        <div>Cart</div>
+        <div>Become a Seller</div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Big Billion Days Sale</h1>
+        <p>Up to 70% Off on Electronics & Fashion</p>
+        <button>Shop Now</button>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Shopping">
+</div>
+
+<!-- Categories -->
+<div class="categories">
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041880.png">
+        <p>Mobiles</p>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+        <p>Fashion</p>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+        <p>Electronics</p>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png">
+        <p>Home</p>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+        <p>Beauty</p>
+    </div>
+</div>
+
+<!-- Products -->
+<div class="products">
+    <h2>Top Deals</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2920/2920322.png">
+            <h4>Smartphone</h4>
+            <p>₹14,999</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+            <h4>Men's Jacket</h4>
+            <p>₹1,299</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png">
+            <h4>Sofa</h4>
+            <p>₹9,999</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2920/2920322.png">
+            <h4>Headphones</h4>
+            <p>₹1,999</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 ShopKart. All Rights Reserved.
+</div>
+
+</body>
+</html>
+
